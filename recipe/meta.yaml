@@ -15,7 +15,7 @@ source:
       - qt5_dll.diff
 
 build:
-  number: 0
+  number: 1
   run_exports:
     {{ pin_subpackage('pyqtwebkit', max_pin='x.x') }}
     
