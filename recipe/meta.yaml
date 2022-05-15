@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://distfiles.macports.org/py-pyqt5/PyQt5_gpl-{{ pyqtversion }}.tar.gz
-    sha1: f442a876794947a24474cf85eb02abd60f00f642
+  - url: https://distfiles.macports.org/py-pyqt5/PyQt5-{{ pyqtversion }}.tar.gz
+    sha256: 2a69597e0dd11caabe75fae133feca66387819fc9bc050f547e5551bce97e5be
     patches:
       - 0003-configure.patch
       # remove build path from .bat
