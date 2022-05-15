@@ -1,5 +1,5 @@
 {% set version = "5.212" %}
-{% set pyqtversion = "5.12.3" %}
+{% set pyqtversion = "5.15" %}
 
 package:
   name: pyqtwebkit
