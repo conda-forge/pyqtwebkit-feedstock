@@ -22,11 +22,11 @@ pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
-  qt-main:
+  qt:
     max_pin: x.x
 python:
 - 3.7.* *_cpython
-qt-main:
+qt:
 - 5.15
 target_platform:
 - linux-64
