@@ -12,7 +12,7 @@ source:
       - 0003-configure.patch
       # remove build path from .bat
       - 0004-configure-winbat.patch  # [win]
-      - qt5_dll.diff
+      #- qt5_dll.diff
 
 build:
   number: 3
