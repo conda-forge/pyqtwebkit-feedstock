@@ -15,7 +15,7 @@ source:
       - qt5_dll.diff
 
 build:
-  number: 2
+  number: 3
   run_exports:
     {{ pin_subpackage('pyqtwebkit', max_pin='x.x') }}
     
@@ -56,7 +56,7 @@ requirements:
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - python
     - dbus  # [not win]
-    - qt
+    - qt-main
     - qtwebkit {{ version }}
     # contains sip?
     - pyqt
