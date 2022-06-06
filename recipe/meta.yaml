@@ -50,9 +50,11 @@ requirements:
     - {{ cdt('libxfixes') }}             # [linux]
     - {{ cdt('libxxf86vm') }}            # [linux]
     - {{ cdt('mesa-libgbm') }}           # [linux]
+    - {{ cdt('libxext') }}               # [linux]
     - jom  # [win]
     - pkg-config  # [not win]
     - make  # [unix]
+    - sysroot_linux-64 2.17              # [linux64]
   host:
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
     - python
