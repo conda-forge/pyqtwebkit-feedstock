@@ -60,4 +60,6 @@ fi
 # just build the parts we need
 CPATH=$PREFIX/include make -j$CPU_COUNT sub-QtWebKit
 CPATH=$PREFIX/include make -j$CPU_COUNT sub-QtWebKitWidgets
-make install
+
+make sub-QtWebKit-install_subtargets
+make sub-QtWebKitWidgets-install_subtargets
