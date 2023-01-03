@@ -48,6 +48,7 @@ $SIP_COMMAND \
 $EXTRA_FLAGS
 
 pushd build
+cat Makefile
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" ]]; then
   # Make sure BUILD_PREFIX sip-distinfo is called instead of the HOST one
