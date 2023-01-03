@@ -57,5 +57,7 @@ if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" == "1" ]]; then
   mv Makefile.temp Makefile
 fi
 
-CPATH=$PREFIX/include make -j$CPU_COUNT
+# just build the parts we need
+CPATH=$PREFIX/include make -j$CPU_COUNT sub-QtWebKit
+CPATH=$PREFIX/include make -j$CPU_COUNT sub-QtWebKitWidgets
 make install
