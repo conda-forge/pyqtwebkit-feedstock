@@ -11,12 +11,13 @@ source:
 
 
 build:
-  number: 3
-  skip: true  # [not x86_64]
+  number: 4
+
 requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - sysroot_linux-64 2.17              # [linux64]
     - {{ cdt('xorg-x11-proto-devel') }}  # [linux]
     - {{ cdt('libx11-devel') }}          # [linux]
     - {{ cdt('libxext') }}               # [linux]
@@ -82,6 +83,7 @@ requirements:
     - python
     - pyqt
     - qtwebkit
+    - __osx >={{ MACOSX_DEPLOYMENT_TARGET|default("10.9") }}  # [osx and x86_64]
 test:
   files:
     - pyqt_test.py
