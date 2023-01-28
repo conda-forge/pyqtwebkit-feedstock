@@ -1,4 +1,4 @@
-{% set version = "5.15.7" %}
+{% set version = "5.15.8" %}
 
 package:
   name: pyqtwebkit
@@ -6,12 +6,12 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/P/PyQt{{ version[0] }}/PyQt{{ version[0] }}-{{ version }}.tar.gz
-    sha256: 755121a52b3a08cb07275c10ebb96576d36e320e572591db16cfdbc558101594
+    sha256: bc85e3efb9135c56c8b88157c8825005fb7cd0f14babd93976778aae82eda360
     folder: pyqt
 
 
 build:
-  number: 5
+  number: 0
 
 requirements:
   build:
@@ -100,7 +100,7 @@ about:
   license: LicenseRef-Commercial or GPL-3.0-only
   license_family: GPL
   license_file: LICENSE
-  summary: 'Python binding of the cross-platform GUI toolkit Qt. QtWebKit only.'
+  summary: Python binding of the cross-platform GUI toolkit Qt. QtWebKit only.
   description: |
     "PyQt is a set of Python v2 and v3 bindings for The Qt Company's Qt
     application framework and runs on all platforms supported by Qt including
