@@ -9,6 +9,8 @@ conda_build:
 build_platform:
   osx_arm64: osx_64
   linux_aarch64: linux_aarch64
+  linux_ppc64le: linux_ppc64le
 test_on_native_only: true
 provider:
   linux_aarch64: azure
+  linux_ppc64le: azure
