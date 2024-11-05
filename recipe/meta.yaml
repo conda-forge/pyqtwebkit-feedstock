@@ -1,4 +1,4 @@
-{% set version = "5.15.9" %}
+{% set version = "5.15.10" %}
 
 package:
   name: pyqtwebkit
@@ -6,12 +6,12 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/P/PyQt{{ version[0] }}/PyQt{{ version[0] }}-{{ version }}.tar.gz
-    sha256: dc41e8401a90dc3e2b692b411bd5492ab559ae27a27424eed4bd3915564ec4c0
+    sha256: d46b7804b1b10a4ff91753f8113e5b5580d2b4462f3226288e2d84497334898a
     folder: pyqt
 
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
