@@ -8,7 +8,6 @@ call sip-build ^
     --verbose ^
     --confirm-license ^
     --disable QtNfc ^
-    --disable QtCore ^
     --no-make
 if %ERRORLEVEL% neq 0 exit 1
 
