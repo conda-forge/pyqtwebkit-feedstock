@@ -71,7 +71,7 @@ requirements:
     - python
     - setuptools
     - pip
-    - sip 6.8.3                              # [build_platform == target_platform]
+    - sip                                    # [build_platform == target_platform]
     - toml
     - pyqt-builder                           # [build_platform == target_platform]
     - packaging
