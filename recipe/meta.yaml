@@ -8,7 +8,8 @@ source:
   - url: https://pypi.org/packages/source/P/PyQt{{ version[0] }}/PyQt{{ version[0] }}-{{ version }}.tar.gz
     sha256: dc41e8401a90dc3e2b692b411bd5492ab559ae27a27424eed4bd3915564ec4c0
     folder: pyqt
-
+    patches:
+      - remove-deleted-xkb-keys.patch
 
 build:
   number: 3
