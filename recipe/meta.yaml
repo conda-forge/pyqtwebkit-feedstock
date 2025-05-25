@@ -1,4 +1,4 @@
-{% set version = "5.15.9" %}
+{% set version = "6.2.1" %}
 
 package:
   name: pyqtwebkit
@@ -6,13 +6,13 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/P/PyQt{{ version[0] }}/PyQt{{ version[0] }}-{{ version }}.tar.gz
-    sha256: dc41e8401a90dc3e2b692b411bd5492ab559ae27a27424eed4bd3915564ec4c0
+    sha256: d603a5c8effccc9174b3f43834256401a61ea40f2338306ca22fb6a1e870b89c
     folder: pyqt
     patches:
       - remove-deleted-xkb-keys.patch
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
