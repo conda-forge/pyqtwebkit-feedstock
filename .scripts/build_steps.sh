@@ -54,16 +54,15 @@ ulimit -n 1024
 # "recipe/yum_requirements.txt" file. After updating that file,
 # run "conda smithy rerender" and this line will be updated
 # automatically.
-/usr/bin/sudo -n yum install -y alsa-lib expat gtk2 gtkmm24 libdrm libglvnd-egl libglvnd-glx libICE libselinux libSM libX11 libXau libxcb libXcomposite libXcursor libXdamage libXext libXfixes libXi libxkbcommon libXrandr libXrender libXScrnSaver libXtst libXxf86vm mesa-dri-drivers mesa-libEGL mesa-libGL pciutils pcre xcb-util xcb-util-image xcb-util-keysyms xcb-util-renderutil xcb-util-wm xorg-x11-server-Xvfb
+/usr/bin/sudo -n yum install -y mesa-libGL mesa-libGL-devel mesa-libEGL-devel mesa-dri-drivers libX11-devel libglvnd-glx xorg-x11-server-Xvfb
 )
 
 # make the build number clobber
 make_build_number "${FEEDSTOCK_ROOT}" "${RECIPE_ROOT}" "${CONFIG_FILE}"
 
-if [[ "${HOST_PLATFORM}" != "${BUILD_PLATFORM}" ]] && [[ "${HOST_PLATFORM}" != linux-* ]] && [[ "${BUILD_WITH_CONDA_DEBUG:-0}" != 1 ]]; then
+if [[ "${HOST_PLATFORM}" != "${BUILD_PLATFORM}" ]] && [[ "${BUILD_WITH_CONDA_DEBUG:-0}" != 1 ]]; then
     EXTRA_CB_OPTIONS="${EXTRA_CB_OPTIONS:-} --no-test"
 fi
-
 
 ( endgroup "Configuring conda" ) 2> /dev/null
 
